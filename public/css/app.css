@@ -1330,3 +1330,6 @@ body {
 .login-shell .login-desc, .login-shell .login-note, .login-shell .login-remember { color: #9aa0bd !important; }
 .login-shell .login-badge { background: rgba(124,92,255,.16) !important; color: #c4b5fd !important; }
 .login-shell .login-remember input { background: transparent; border-color: rgba(255,255,255,.3); }
+.dash-badge-danger { background: rgba(244,63,94,.15); color: #fda4af; }
+.login-alert--ok { background: rgba(34,197,94,.12); border-color: rgba(34,197,94,.35); color: #86efac; }
+.login-alert--ok a { color: inherit; text-decoration: underline; }

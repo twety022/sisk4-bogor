@@ -46,6 +46,13 @@
                         <span class="dash-nav-badge">{{ $unread }}</span>
                     @endif
                 </a>
+
+                @if (auth()->user()->role === 'super_admin')
+    <span class="dash-nav-label">Pengaturan</span>
+    <a href="{{ route('admin.admins.index') }}" class="dash-nav-link {{ request()->routeIs('admin.admins.*') ? 'active' : '' }}">
+        <i class="bi bi-people"></i> Lihat Admin
+    </a>
+@endif
             </nav>
 
             <div class="dash-sidebar-foot">
